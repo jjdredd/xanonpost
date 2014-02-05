@@ -16,8 +16,6 @@ data = { "jpost" : "post",
 headers = {'Content-type': 'application/x-www-form-urlencoded', 
            'Referer' : 'http://x.mipt.cc/?xpost=0',
            'User-Agent' : 'BitMessage'}
-#remove this to start posting
-exit()
 
 if len(sys.argv) < 2 or sys.argv[1] != 'newMessage':
     exit()
