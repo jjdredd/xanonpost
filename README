@@ -1,0 +1,15 @@
+To enable the API, copy and paste these lines into the bitmessagesettings section of the keys.dat file (the values "username" and "password" are merely examples):
+
+apienabled = true
+apiport = 8442
+apiinterface = 127.0.0.1
+apiusername = chelsea 
+apipassword = YourSuperPassw6rd-ChangeThIs-022w3eksssoQAWfasddswwWIU
+
+Additionally, you may optionally include an additional entry which will specify a program which Bitmessage will run when certain events occur.
+
+apinotifypath = c:\\example\\example.exe
+
+One of these arguments will be passed to your program: startingUp, newMessage, newBroadcast. Be sure your program doesn't crash when given newer arguments introduced in the future as this list will likely expand. 
+
+https://github.com/Bitmessage/PyBitmessage/blob/master/src/api_client.py
